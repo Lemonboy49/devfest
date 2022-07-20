@@ -1,0 +1,139 @@
+/*
+COLORS: 
+
+PRIMARY:
+1: #f03e3e
+2:#ff8787
+3: #ff6b6b
+#f03e3e 
+
+SECONDARY:
+1: #fff5f5
+
+GREY: 
+1: #212529
+
+*/
+
+a:link,
+a:visited {
+  color: #f03e3e
+}
+
+.modal {
+display: none;  
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+max-width: 80rem;
+background-color: #f3f3f3;
+padding: 4rem 5rem;
+box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+z-index: 1000;
+transition: all 0.5s;
+}
+
+.btn--close-modal {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.modal__header {
+  font-size: 3.25rem;
+  margin-bottom: 4.5rem;
+  line-height: 1.5;
+  color: #f03e3e;
+}
+
+.modal-form {
+  margin: 0 3rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.modal-form input {
+  font-size: 1.7rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+}
+.modal-form label {
+  font-weight: 600;
+  color: #ff6b6b;
+  font-size: 1.7rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.btn-modal {
+  background: linear-gradient(rgb(240, 62, 62), rgb(255, 107, 107));
+}
+
+.btn-modal:hover {
+  cursor: pointer;
+}
+
+.modal-btn {
+  margin-top: 2rem;
+  font-size: 2rem;
+  background-color: transparent;
+  border-radius: 7px;
+  padding: 1rem 4rem;
+  box-shadow: none;
+  cursor: pointer;
+  background-color: #ff6b6b;
+  text-align: center;
+  margin-left: 2.5rem;
+}
+
+.footer {
+
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-foot {
+  font-size: 1.6rem;
+
+}
+
+.footer-list {
+  list-style-type: none;
+  color: #212529;
+}
+
+
+.footer-list:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.logo-social {
+  color: #fff !important; 
+  font-size: 1.2rem;
+}
+
+.foot-img {
+  width: 100%;
+  margin-right: 1rem
+}
